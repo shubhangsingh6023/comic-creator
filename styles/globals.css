@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply text-black bg-gradient-to-b from-transparent to-white;
+}
+
+.container {
+  @apply mx-auto p-4 bg-white text-black;
+}
+
+.warning {
+  @apply bg-yellow-200 p-4 mb-8;
+}
+
+.form {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.form-input {
+  @apply mt-1 p-2 border border-gray-300 rounded w-full;
+}
+
+.button {
+  @apply bg-blue-500 text-white p-3 rounded-full col-span-2 mx-auto;
+}
+
+.generated-comic {
+  @apply text-xl font-bold mb-4;
+}
+
+.comic-images {
+  @apply grid grid-cols-2 md:grid-cols-5 gap-4;
+}
+
+.comic-image {
+  @apply mb-4 w-full h-auto;
+}
